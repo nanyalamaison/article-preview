@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --darkgrayblue: hsl(217, 19%, 35%);
+    --darkblue: hsl(214, 17%, 51%);
+    --grayblue: hsl(212, 23%, 69%);
+    --lightgrayblue: hsl(210, 46%, 95%);
+
+    --fw500: 500;
+    --fw700: 700;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 13px;
+    background-color: var(--lightgrayblue);
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+.container{
+    margin: 0 auto;
+    width: 320px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    background-color: white;
+    border-radius:3%;
+}
+
+.img-heading img{
+    width: 100%;
+    height: 15em;
+}
+
+.review{
+    padding: 2.3em 2.3em 2.3em 3.2em;
+    background-color: white;
+}
+
+.review-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.review-info h1 {
+    font-size: 1.4em;
+    color: var(--darkgrayblue);
+    font-weight: var(--fw500);
+}
+
+.review-info p {
+    font-size: 1em;
+    color: var(--darkblue);
+    font-weight: var(--fw500);
+}
+
+.review-person{
+    margin-top: 2em;
+}
+
+.person,
+.review-person{
+    display: flex;
+}
+
+.person{
+    gap: 1.5em;
+    margin-right: 5em;
+}
+
+.person img{
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+}
+
+.person-info p:first-child{
+    color: var(--darkgrayblue);
+    font-weight: var(--fw700);
+    letter-spacing: .1em;
+}
+
+.person-info p:nth-child(2){
+    color: var(--grayblue);
+    letter-spacing: .1em;
+}
+
+#share-btn{
+    background-color: var(--lightgrayblue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3em;
+    height: 3em;
+}
+
+.active{
+    background-color: var(--darkgrayblue);
+    color: white;
+}
